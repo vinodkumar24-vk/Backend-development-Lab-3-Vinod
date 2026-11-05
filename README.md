@@ -3,6 +3,7 @@
 **Student Name:** VINOD KUMAR · **Registration Number:** 252U1R1184 · **Section:** CSE-2D(214)  
 **Course:** Backend Development Fundamentals (Year II Term II) · **Faculty:** SAI SIVA TEJA · **Institution:** Aurora Deemed to be University  
 **GitHub Repository:** [https://github.com/vinodkumar24-vk/Backend-development-Lab-3-Vinod](https://github.com/vinodkumar24-vk/Backend-development-Lab-3-Vinod)  
+**Live Vercel Link:** [https://backend-development-lab-3-vinod.vercel.app/](https://backend-development-lab-3-vinod.vercel.app/)  
 
 ---
 
@@ -218,7 +219,12 @@ During Week 3 slots 13–19, students troubleshoot and fix common Node.js / SQLi
 
 ---
 
-## --> Testing Evidence: Postman Screenshots
+## --> Testing Evidence: Live Browser Screenshots
+
+All screenshots below are captured from the live deployed Vercel application: [`https://backend-development-lab-3-vinod.vercel.app/`](https://backend-development-lab-3-vinod.vercel.app/).
+
+### 0. GET `/` - Root API Welcome Route
+![GET Root Welcome](screenshots/14_get_root_welcome.png)
 
 ### 1. GET `/books` - All Books (Default Query Parameters)
 ![GET All Books](screenshots/01_get_books_default.png)
