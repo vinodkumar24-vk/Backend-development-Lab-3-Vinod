@@ -1,0 +1,32 @@
+{
+  "name": "backend-development-lab-3-vinod",
+  "version": "1.0.0",
+  "description": "Lab 3: REST API, query parameters, validation, and debugging - Vinod Kumar",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "init-db": "node init-db.js"
+  },
+  "keywords": [
+    "express",
+    "sqlite",
+    "sqlite3",
+    "rest-api",
+    "query-parameters",
+    "validation",
+    "debugging",
+    "backend-development"
+  ],
+  "author": "VINOD KUMAR (252U1R1184)",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.3.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

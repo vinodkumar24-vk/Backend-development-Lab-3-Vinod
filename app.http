@@ -1,0 +1,100 @@
+### Base URL
+@baseUrl = http://localhost:3000
+
+### 1. Root Route - API Information
+GET {{baseUrl}}/
+Accept: application/json
+
+### 2. GET /books - All Books (Default query params: order_by=id ASC, limit=10, offset=0)
+GET {{baseUrl}}/books/
+Accept: application/json
+
+### 3. GET /books - Text Search Filter (search_q=Python)
+GET {{baseUrl}}/books/?search_q=Python
+Accept: application/json
+
+### 4. GET /books - Sort by Price Descending (order_by=price&order=DESC)
+GET {{baseUrl}}/books/?order_by=price&order=DESC
+Accept: application/json
+
+### 5. GET /books - Price Range Filter (min_price=500&max_price=1000)
+GET {{baseUrl}}/books/?min_price=500&max_price=1000
+Accept: application/json
+
+### 6. GET /books - Pagination (limit=3&offset=3)
+GET {{baseUrl}}/books/?limit=3&offset=3
+Accept: application/json
+
+### 7. GET /books - Combined Search, Filter, Sort & Pagination
+GET {{baseUrl}}/books/?search_q=o&order_by=price&order=ASC&min_price=400&max_price=1200&limit=4&offset=0
+Accept: application/json
+
+### 8. GET /books/:bookId - Single Book (Success: 200 OK)
+GET {{baseUrl}}/books/1/
+Accept: application/json
+
+### 9. GET /books/:bookId - Single Book Not Found (Failure: 404 Not Found)
+GET {{baseUrl}}/books/999/
+Accept: application/json
+
+### 10. POST /books - Add New Book (Success: 201 Created)
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "title": "Designing Data-Intensive Applications",
+  "author": "Martin Kleppmann",
+  "price": 1450,
+  "pages": 616
+}
+
+### 11. POST /books - Validation Error: Missing Title (Failure: 400 Bad Request)
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "author": "Robert C. Martin",
+  "price": 650,
+  "pages": 464
+}
+
+### 12. POST /books - Validation Error: Non-numeric Price (Failure: 400 Bad Request)
+POST {{baseUrl}}/books/
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture",
+  "author": "Robert C. Martin",
+  "price": "five-hundred",
+  "pages": 432
+}
+
+### 13. PUT /books/:bookId - Update Existing Book (Success: 200 OK)
+PUT {{baseUrl}}/books/1/
+Content-Type: application/json
+
+{
+  "title": "Atomic Habits (Hardcover Edition)",
+  "author": "James Clear",
+  "price": 599,
+  "pages": 320
+}
+
+### 14. PUT /books/:bookId - Update Non-existent Book (Failure: 404 Not Found)
+PUT {{baseUrl}}/books/999/
+Content-Type: application/json
+
+{
+  "title": "Ghost Book",
+  "author": "Anonymous",
+  "price": 999,
+  "pages": 100
+}
+
+### 15. DELETE /books/:bookId - Delete Book (Success: 200 OK)
+DELETE {{baseUrl}}/books/11/
+Accept: application/json
+
+### 16. DELETE /books/:bookId - Delete Non-existent Book (Failure: 404 Not Found)
+DELETE {{baseUrl}}/books/999/
+Accept: application/json
