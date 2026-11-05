@@ -1,7 +1,7 @@
 # Lab 3: REST API, Query Parameters, Validation, and Debugging
 
 **Student Name:** VINOD KUMAR · **Registration Number:** 252U1R1184 · **Section:** CSE-2D(214)  
-**Course:** Backend Development Fundamentals (Year II Term II) · **Faculty:** Joel Prashanth D · **Institution:** Aurora Deemed to be University  
+**Course:** Backend Development Fundamentals (Year II Term II) · **Faculty:** SAI SIVA TEJA · **Institution:** Aurora Deemed to be University  
 **GitHub Repository:** [https://github.com/vinodkumar24-vk/Backend-development-Lab-3-Vinod](https://github.com/vinodkumar24-vk/Backend-development-Lab-3-Vinod)  
 
 ---
@@ -288,3 +288,4 @@ Alternatively, test all endpoints using VS Code REST Client extension with [`app
 
 5. **Q: What causes `EADDRINUSE` and how do you resolve it?**  
    *A:* `EADDRINUSE` occurs when the server tries to bind to a port that is already in use by another active process. It is resolved by terminating the conflicting process using `kill -9 <PID>` / `taskkill`, or choosing a different port via environment variables.
+

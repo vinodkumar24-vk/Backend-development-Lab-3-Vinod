@@ -89,7 +89,7 @@ app.get('/', (request, response) => {
       name: 'VINOD KUMAR',
       regNo: '252U1R1184',
       section: 'CSE-2D(214)',
-      faculty: 'Joel Prashanth D',
+      faculty: 'SAI SIVA TEJA',
       course: 'Backend Development Fundamentals (Year II Term II)'
     },
     endpoints: {
@@ -431,3 +431,4 @@ app.use((error, request, response, next) => {
 });
 
 module.exports = app;
+

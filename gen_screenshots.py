@@ -79,7 +79,7 @@ def create_postman_card(title, method, url, status_code, status_text, req_body_l
     # ---- TOP BAR ----
     draw.rectangle([0, 0, width, top_bar], fill="#1E293B")
     draw.text((20, 13), "Postman  |  Lab 3: REST API & Query Parameters", fill="#F8FAFC", font=font_bold)
-    draw.text((width - 320, 13), "Vinod Kumar (252U1R1184) · Joel Prashanth D", fill="#94A3B8", font=font_small)
+    draw.text((width - 320, 13), "Vinod Kumar (252U1R1184) · SAI SIVA TEJA", fill="#94A3B8", font=font_small)
 
     # ---- URL BAR ----
     y = top_bar
@@ -397,3 +397,4 @@ def create_debugging_terminal():
 
 create_debugging_terminal()
 print("All Lab 3 screenshots successfully generated!")
+

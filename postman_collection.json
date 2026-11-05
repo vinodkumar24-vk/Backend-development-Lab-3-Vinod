@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "lab3-rest-api-vinod-kumar",
     "name": "Lab 3: REST API & Query Parameters - Vinod Kumar",
-    "description": "Comprehensive Postman test collection for Lab 3 (REST API, Query Parameters, Validation & Debugging) - Student: VINOD KUMAR (252U1R1184), Faculty: Joel Prashanth D",
+    "description": "Comprehensive Postman test collection for Lab 3 (REST API, Query Parameters, Validation & Debugging) - Student: VINOD KUMAR (252U1R1184), Faculty: SAI SIVA TEJA",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
@@ -240,3 +240,4 @@
     }
   ]
 }
+
