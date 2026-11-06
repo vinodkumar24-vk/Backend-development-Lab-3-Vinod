@@ -277,21 +277,3 @@ The repository includes a ready-to-run Postman collection file: [`postman_collec
 Alternatively, test all endpoints using VS Code REST Client extension with [`app.http`](./app.http).
 
 ---
-
-## --> Viva Preparation (Questions & Answers)
-
-1. **Q: Why should REST endpoints be named as nouns instead of verbs?**  
-   *A:* REST is resource-oriented. Nouns (`/books`) identify resources, while HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`) represent actions. This decouples resource identity from behavior and ensures clean, predictable APIs.
-
-2. **Q: What is the difference between Path Parameters and Query Parameters?**  
-   *A:* Path parameters (`/books/:bookId`) identify a specific, unique resource. Query parameters (`/books?search_q=Python&order_by=price`) filter, sort, or paginate a collection of resources without changing the resource identity.
-
-3. **Q: Why can't we use SQL parameterisation for `ORDER BY` column names?**  
-   *A:* Database engines use parameterised placeholders (`?`) for values (literals), not structural identifiers like column or table names. To prevent SQL injection in sorting, column names must be checked against an application-level whitelist.
-
-4. **Q: Why return `400 Bad Request` instead of `500 Internal Server Error` for invalid input?**  
-   *A:* `400 Bad Request` indicates a client-side error (malformed payload, missing fields). `500 Internal Server Error` indicates an unexpected server failure. Accurate status codes help API consumers diagnose and correct mistakes without contacting server administrators.
-
-5. **Q: What causes `EADDRINUSE` and how do you resolve it?**  
-   *A:* `EADDRINUSE` occurs when the server tries to bind to a port that is already in use by another active process. It is resolved by terminating the conflicting process using `kill -9 <PID>` / `taskkill`, or choosing a different port via environment variables.
-
