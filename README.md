@@ -17,7 +17,6 @@
 7. [Task 7: Debugging Exercise (Common Errors & Solutions)](#task-7-debugging-exercise-common-errors--solutions)
 8. [Testing Evidence: Postman Screenshots](#testing-evidence-postman-screenshots)
 9. [Postman Test Collection Guide](#postman-test-collection-guide)
-10. [Viva Preparation (Questions & Answers)](#viva-preparation-questions--answers)
 
 ---
 
